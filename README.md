@@ -36,7 +36,7 @@ A learning project exploring a simple authentication API built with **Node.js, E
    **PowerShell:**
 
    ```powershell
-   $env:JWT_SECRET = node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+   $env:JWT_SECRET = (node -e "console.log(require('crypto').randomBytes(32).toString('hex'))")
    $env:MONGODB_URI = "mongodb://localhost:27017/login_app"
    ```
 
